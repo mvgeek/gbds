@@ -1,8 +1,30 @@
 <html>
-    <head></head>
+    <head>
+      <link rel="stylesheet" href="build/css/_variables.css">
+    </head>
     <body>
-      <button>
-        Gearbox Demo
-      </button>  
+      <style>
+        .button{
+          background-color: var(--sd-gb-light-color-brand);
+          font-size: 14;
+          padding: 8 16px;
+          color: var(--sd-gb-dark-on-primary);
+          border: 0;
+        };
+        .container{
+          background-color: var(--sd-gb-light-color-accent530);
+          padding: 104px;
+          height: 400px;
+          width: 400px;
+          flex: auto;
+
+        }
+      </style>
+      <div class="container">
+        <button class="button">
+          Gearbox Demo
+        </button>  
+      </div>
+
     </body>
 </html>
