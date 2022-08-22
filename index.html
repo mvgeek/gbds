@@ -1,6 +1,7 @@
 <html>
     <head>
-      <link rel="stylesheet" href="build/css/gb-light.css">
+      <link rel="stylesheet" href="build/css/gb-light.css" id="lightmode">
+      <link disabled rel="stylesheet" href="build/css/gb-dark.css" id="darkmode">
     </head>
     <body style="background-color: var(--sd-surface)">
       <style>
@@ -22,5 +23,19 @@
           Gearbox Button
         </button>  
       </div>
+      <p></p>
+      <div>
+        <a href="#" onclick="theme_toggle(); return false;">Switch theme</a>  
+      </div>
     </body>
+    <script>
+      function theme_set(toggled) {
+    document.getElementById('lightmode').disabled = toggled;
+    document.getElementById('darkmode').disabled = !toggled;
+    localStorage.setItem('theme-toggled', toggled ? '1' : '');
+}
+function theme_toggle() {
+    theme_set(!document.getElementById('lightmode').disabled);
+}   
+    </script>
 </html>
