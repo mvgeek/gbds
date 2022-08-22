@@ -12,20 +12,28 @@
           color: var(--sd-on-primary);
           border: 0;
         }
-       .title{
+       .text-high{
             color: var(--sd-text-high);
+       }
+       .text-mid{
+            color: var(--sd-text-mid);
+       }
+       .text-low{
+            color: var(--sd-text-low);
        }
           
       </style>
       <div>
-        <h1 class="title">This is just a demo of new gb structure</h1>
+        <h1 class="text-high">This is just a demo of new gb structure</h1>
+        <h2 class="text-mid">With mid color text</h2>
+        <h3 class="text-low">With low color text</h3>
         <button>
           Gearbox Button
         </button>  
       </div>
       <p></p>
       <div>
-        <a href="#" onclick="theme_toggle(); return false;">Switch theme</a>  
+        <button style="background-color:var(--sd-color-accent340);" href="#" onclick="theme_toggle(); return false;">Switch theme</button>  
       </div>
     </body>
     <script>
