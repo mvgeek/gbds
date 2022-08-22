@@ -1,21 +1,23 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": ["tokens/gb-light.json","tokens/gb-dark.json"],
   "platforms": {
-    "scss": {
+    "css": {
       "transformGroup": "css",
       "prefix": "sd",
       "buildPath": "build/css/",
       "files": [{
-        "destination": "_variables.css",
-        "format": "css/variables"
-      }]
-    },
-    "android": {
-      "transforms": ["attribute/cti", "name/cti/snake", "color/hex", "size/remToSp", "size/remToDp"],
-      "buildPath": "build/android/src/main/res/values/",
-      "files": [{
-        "destination": "style_dictionary_colors.xml",
-        "format": "android/colors"
+        "destination": "gb-dark.css",
+        "format": "css/variables",
+        "options": {
+          "outputReferences": true
+        }
+      },
+      {
+        "destination": "gb-light.css",
+        "format": "css/variables",
+        "options": {
+          "outputReferences": true
+        }
       }]
     }
   }
