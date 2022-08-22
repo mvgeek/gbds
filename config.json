@@ -1,18 +1,11 @@
 {
-  "source": ["tokens/gb-light.json","tokens/gb-dark.json"],
+  "source": ["tokens/gb-light.json"],
   "platforms": {
     "css": {
       "transformGroup": "css",
       "prefix": "sd",
       "buildPath": "build/css/",
       "files": [{
-        "destination": "gb-dark.css",
-        "format": "css/variables",
-        "options": {
-          "outputReferences": true
-        }
-      },
-      {
         "destination": "gb-light.css",
         "format": "css/variables",
         "options": {
